@@ -33,15 +33,38 @@ body {
 .card {
   max-width: 345px;
   background-color: #f5f7ff;
-  padding: 1em;
   border-radius: 15px;
+  text-align: center;
 }
 .card__img img {
   width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.card__text {
+  padding: 2em;
+}
+.card__plan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  background-color: #eef0f6;
+  padding: 1em;
+  border-radius: 15px;
+}
+.card__plan > div + div {
+  margin: 0 1em;
+}
+
+.btn-primary {
+  padding: 0.8em 6em;
+  background-color: #3829e0;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
 }
 
 .container {
-  width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
