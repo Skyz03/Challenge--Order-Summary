@@ -2,8 +2,16 @@
   max-width: 345px;
   background-color: $card-color;
   border-radius: 15px;
+  transition: transform 0.7s ease;
   text-align: center;
+  transform: scale(0.9);
+  box-shadow: 5px 10px 10px #ccc;
 
+  &:hover {
+    transform: scale(1);
+  }
+
+  // IMAGE SECTION
   &__img {
     img {
       width: 100%;
@@ -15,15 +23,60 @@
     padding: 2em;
   }
 
+  // TOP SECTION
+  &__top {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: $text-color1;
+    }
+  }
+  // PLAN SECTION
+
   &__plan {
     @include flexCenter;
-    margin-top: 2em;
+    margin: 2em 0;
     background-color: $alternate-color;
     padding: 1em;
     border-radius: 15px;
+
+    .fees {
+      font-size: 0.8rem;
+
+      .plan-time {
+        font-weight: 700;
+      }
+
+      .amount {
+        font-size: 0.9rem;
+        color: $text-color1;
+      }
+    }
+
+    .change {
+      font-size: 0.8rem;
+    }
   }
 
   &__plan > div + div {
     margin: 0 1em;
+  }
+
+  // PAYMENT SECTION
+
+  &__payment {
+    button {
+      font-weight: 700;
+    }
+
+    .cancel {
+      margin-top: 1.5em;
+      font-size: 0.9rem;
+      color: $text-color1;
+    }
   }
 }
