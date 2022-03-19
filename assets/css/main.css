@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+body {
+  background-color: #e0e8ff;
+  font-family: "Outfit", sans-serif;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+@media (max-width: 375px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+}
+
+.card {
+  max-width: 345px;
+  background-color: #f5f7ff;
+  padding: 1em;
+  border-radius: 15px;
+}
+.card__img img {
+  width: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
